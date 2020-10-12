@@ -1,3 +1,3 @@
 SELECT name, email, phone
-FROM student
-WHERE github IS NULL;
+FROM students
+WHERE github IS NULL AND end_date < CURRENT_DATE;
